@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>UTMKL Staff Facility Booking</title>
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Agench is an elegant design, 100% responsive Bootstrap 5 template. It is best for agency websites and marketing companies.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="StaffPagePicture/UTM-LOGO.png">
+
+    <!-- CSS
+	============================================ -->
+
+    <!-- Vendor CSS (Bootstrap & Icon Font) -->
+    <link rel="stylesheet" href="assets/css/vendor/font-awesome-pro.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="assets/css/vendor/muli-font.css">
+
+    <!-- Plugins CSS (All Plugins Files) -->
+    
+    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/animate.css">
+    <link rel="stylesheet" href="assets/css/plugins/aos.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
+    
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <!-- <link rel="stylesheet" href="assets/css/vendor/vendor.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css"> -->
+
+</head>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/63479eb437898912e96e5bc6/1gf7s7t2f';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
+
+
+<body>
+
+    <div id="page" class="section">
+        <!-- Header Section Start -->
+        <div class="header-section header-transparent sticky-header section">
+            <div class="header-inner">
+                <div class="container position-relative">
+                    <div class="row justify-content-between align-items-center">
+
+                        <!-- Header Logo Start -->
+                        <div class="col-xl-2 col-auto order-0">
+                            <div class="header-logo">
+                                <a href="index.html">
+                                    <img class="dark-logo" src="StaffPagePicture/UTM-LOGO1.png" width = "100" height="90" alt="UTM Logo">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Header Logo End -->
+
+                        <!-- Header Main Menu Start -->
+                        <div
+                            class="col-auto col-xl d-flex align-items-center justify-content-xl-center justify-content-end order-2 order-xl-1">
+                            <div class="menu-column-area d-none d-xl-block position-static">
+                                <nav class="site-main-menu">
+                                    <ul>
+                                    <li>
+                                        <a class="active" href="index.html"><span
+                                                class="menu-text">Homepage</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html"><span class="menu-text">About Us</span></a>
+
+                                    </li>
+                                    <li>
+                                        <a href="contact-us.html"><span class="menu-text">Contact Us</span></a>
+
+                                    </li>
+                                    <li>
+                                        <a href="ViewStaffBookingHistory.php"><span class="menu-text">Booking History</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="ViewStaffPaymentHistory.php"><span class="menu-text">Payment History</span></a></li>
+                                    </li>
+                                    <li class="has-children">
+                                        <a href="#"><span class="menu-text">Profile</span></a>
+                                        <span class="menu-toggle"><i class="far fa-angle-down"></i></span>
+                                        <ul class="sub-menu">
+                                            <li><a href="StaffProfile.php"><span class="menu-text" >View Profile</span></a></li>
+                                            <li><a href="..\LoginSignupPage\index.php"><span class="menu-text">Logout</span></a></li>
+                                        </ul>
+                                    </li>
+                                    </ul>
+                                </nav>
+                            </div>
+
+                            <!-- Header Mobile Menu Toggle Start -->
+                            <div class="header-mobile-menu-toggle d-xl-none ml-sm-2">
+                                <button class="toggle">
+                                    <i class="icon-top"></i>
+                                    <i class="icon-middle"></i>
+                                    <i class="icon-bottom"></i>
+                                </button>
+                            </div>
+                            <!-- Header Mobile Menu Toggle End -->
+                        </div>
+                        <!-- Header Main Menu End -->
+
+                        <!-- Header Right Start -->
+                        <div class="col-xl-2 col d-none d-sm-flex justify-content-end order-1 order-xl-2">
+                            <a href="contact-us.html" class="btn btn-light btn-hover-primary">Contact Us</a>
+                        </div>
+                        <!-- Header Right End -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header Section End -->
+
+        <!-- Main Search Start -->
+        <div class="main-search-active">
+            <div class="sidebar-search-icon">
+                <button class="search-close"><i class="pe-7s-close"></i></button>
+            </div>
+            <div class="sidebar-search-input">
+                <form action="#">
+                    <div class="form-search">
+                        <input id="search" class="input-text" value="" placeholder="" type="search">
+                        <button>
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+                <p class="form-description">Hit enter to search or ESC to close</p>
+            </div>
+        </div>
+        <!-- Main Search End -->
+
+        <!-- Slider/Intro Section Start -->
+        <div class="intro-slider-wrap section">
+            <div class="intro-slider swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="intro-section section overlay" data-bg-image="StaffPagePicture/CampusUTMKL.png">
+
+                            <div class="container">
+                                <div class="row row-cols-lg-1 row-cols-1">
+
+                                    <div class="col align-self-center">
+                                        <div class="intro-content mt-xl-8 mt-lg-8 mt-md-8 mt-sm-8 mt-xs-8">
+                                            <h2 class="title">UTMKL Facility Booking System</h2>
+                                            <div class="desc">
+                                                <p>One Stop Center for facilities booking @ University Technology Malaysia, Kuala Lumpur</p>
+                                            </div>
+                                            <!--<a href="StaffFacilityList.php" class="btn btn-primary btn-hover-secondary">Book Now</a>-->
+                                            <a href="StaffFacilityList.php" class="btn btn-primary btn-hover-secondary">Book Now</a>
+                                            <a href="#" class="btn btn-outline-white btn-hover-primary"> Learn More </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="intro-section section overlay" data-bg-image="StaffPagePicture/CampusUTMKL2.png">
+
+                            <div class="container">
+                                <div class="row row-cols-lg-1 row-cols-1">
+
+                                    <!-- Intro One Content Start -->
+                                    <div class="col align-self-center">
+                                        <div class="intro-content mt-8">
+                                            <h2 class="title">UTMKL Facility Booking System</h2>
+                                            <div class="desc">
+                                                <p>One Stop Center for facilities booking @ University Technology Malaysia, Kuala Lumpur</p>
+                                            </div>
+                                            <a href="StaffFacilityList.php"
+                                                class="btn btn-primary btn-hover-secondary">Book Now</a>
+                                            <a href="#" class="btn btn-outline-white btn-hover-primary"> Learn More </a>
+                                        </div>
+                                    </div>
+                                    <!-- Intro One Content End -->
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="intro-section section overlay" data-bg-image="StaffPagePicture/CampusUTMKL3.png">
+
+                            <div class="container">
+                                <div class="row row-cols-lg-1 row-cols-1">
+
+                                    <!-- Intro One Content Start -->
+                                    <div class="col align-self-center max-mb-30">
+                                        <div class="intro-content mt-8">
+                                            <h2 class="title">UTMKL Facility Booking System</h2>
+                                            <div class="desc">
+                                                <p>One Stop Center for facilities booking @ University Technology Malaysia, Kuala Lumpur</p>
+                                            </div>
+                                            <a href="StaffFacilityList.php"
+                                                class="btn btn-primary btn-hover-secondary">Book Now</a>
+                                            <a href="#" class="btn btn-outline-white btn-hover-primary"> Learn More </a>
+                                        </div>
+                                    </div>
+                                    <!-- Intro One Content End -->
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="home-slider-prev swiper-button-prev main-slider-nav"><i class="fal fa-angle-left"></i></div>
+                <div class="home-slider-next swiper-button-next main-slider-nav"><i class="fal fa-angle-right"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Slider/Intro Section End -->
+
+        <!-- About Section Start -->
+        <div class="section section-padding-t90 section-padding-bottom-190">
+            <div class="container">
+
+                <!-- Section Title Start -->
+                <div class="section-title text-center" data-aos="fade-up">
+                    <h2 class="title">Time To Book Your Most Awaited Facility</h2>
+                    <p class="sub-title">More flexibility, freedom and choice!</p>
+                </div>
+                <!-- Section Title End -->
+
+                <!-- About Wrapper Start -->
+                <div class="row">
+
+                    <!-- About Image Area Start -->
+                    <div class="col-xl-7 col-lg-6 col-12" data-aos="fade-up">
+                        <div class="about-image-area">
+                            <div class="about-image js-tilt">
+                                <img src="assets/images/about/home-one-about/Office_2.jpg" alt="">
+                            </div>
+                            <div class="about-image js-tilt">
+                                <img src="assets/images/about/home-one-about/Office_1.jpg" alt="">
+                            </div>
+                            <!-- Animation Shape Start -->
+                            <div class="shape shape-1 scene">
+                                <span data-depth="1"><img src="assets/images/shape-animation/about-shape-1.png"
+                                        alt=""></span>
+                            </div>
+                            <!-- Animation Shape End -->
+                        </div>
+                    </div>
+                    <!-- About Image Area Start -->
+
+                    <!-- About Start -->
+                    <div class="col-xl-5 col-lg-6 col-12" data-aos="fade-up">
+                        <!-- About Content Area Start -->
+                        <div class="about-content-area">
+                            <!-- Section Title Two Start -->
+                            <div class="section-title-two">
+                                <span class="sub-title">Every day brings new challenges</span>
+                                <h3 class="title">UTMKL focused on vision, product and people</h3>
+                            </div>
+                            <!-- Section Title Two End -->
+
+                            <p>Our facilities has been specially designed and built for education, sports and entertainment of UTMKL Staffs.
+                                 Our vision, passion and ideas are matched with focus, expertise and flair.</p>
+
+                            <a class="btn btn-primary btn-hover-secondary mt-xl-12 mt-lg-8 mt-md-6 mt-4" href="about.html">About
+                                Us</a>
+                        </div>
+                        <!-- About Content Area Start -->
+                    </div>
+                    <!-- About Start -->
+
+                </div>
+                <!-- About Wrapper End -->
+
+            </div>
+        </div>
+        <!-- About Section End -->
+
+
+        <!-- Service Section Start -->
+        <div class="section section-padding-t90-b100" data-bg-color="#f8faff">
+            <div class="container">
+
+                <!-- Section Title Start -->
+                <div class="section-title text-center mb-12" data-aos="fade-up">
+                    <h2 class="title fz-32">We create a unique action plan for you need</h2>
+                    <p class="sub-title">Get your venue for the right kind of situation and at the right time with our
+                        <br> Facility Booking System
+                    </p>
+                </div>
+                <!-- Section Title End -->
+
+                <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 mb-n6">
+
+                    <!-- Icon Box Start -->
+                    <div class="col mb-6" data-aos="fade-up">
+
+                        <div class="icon-box text-center" data-vivus-hover>
+                            <div class="icon"><img class="svgInject"
+                                                   src="assets/images/svg/linea/linea-basic-target.svg" alt=""></div>
+                            <div class="content">
+                                <h3 class="title">Education</h3>
+                                <div class="desc">
+                                    <p>The act of teaching knowledge to others and the act of receiving knowledge<br><br></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Icon Box End -->
+
+                    <!-- Icon Box Start -->
+                    <div class="col mb-6" data-aos="fade-up">
+
+                        <div class="icon-box text-center" data-vivus-hover>
+                            <div class="icon"><img class="svgInject"
+                                                   src="assets/images/svg/linea/linea-basic-picture-multiple.svg" alt=""></div>
+                            <div class="content">
+                                <h3 class="title">Sports</h3>
+                                <div class="desc">
+                                    <p>A game, competition, or activity needing physical effort and skill that
+                                        is played or done according to rules, for enjoyment.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Icon Box End -->
+
+                    <!-- Icon Box Start -->
+                    <div class="col mb-6" data-aos="fade-up">
+
+                        <div class="icon-box text-center" data-vivus-hover>
+                            <div class="icon"><img class="svgInject"
+                                                   src="assets/images/svg/linea/linea-basic-life-buoy.svg" alt=""></div>
+                            <div class="content">
+                                <h3 class="title">Entertainment</h3>
+                                <div class="desc">
+                                    <p>Performances of plays and films, and activities such as
+                                        reading and watching television, that give people pleasure.<br><br></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Icon Box End -->
+
+                </div>
+
+            </div>
+        </div>
+        <!-- Service Section End -->
+
+        <!-- Portfolio Section Start -->
+        <div class="section section-padding-t90 ag-masonary-wrapper">
+            <div class="container-fluid px-0">
+                <!-- Section Title Start -->
+                <div class="section-title text-center" data-aos="fade-up">
+                    <h2 class="title fz-32">Facilities Gallery</h2>
+                </div>
+                <!-- Section Title End -->
+
+                <!-- Portfolio Menu Start -->
+                <div class="messonry-button text-center mb-lg-13 mb-md-13 mb-6" data-aos="fade-up">
+                    <button data-filter="*" class="is-checked"><span class="filter-text">All</span></button>
+                    <button data-filter=".cat-1"><span class="filter-text">Hall</span></button>
+                    <button data-filter=".cat-2"><span class="filter-text">Seminar Room</span></button>
+                    <button data-filter=".cat-3"><span class="filter-text">Sport</span> </button>
+                </div>
+                <!-- Portfolio Menu End -->
+
+                <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 g-0 mesonry-list">
+                    <div class="resizer col"></div>
+                    <!-- Single Portfolio Start -->
+                    <div class="col cat-1">
+                        <div class="single-portfolio">
+                            <div class="thumbnail">
+                                <img class="img-fluid" src="StaffPagePicture/Dewan-Azman-Hashim.png" alt="Dewan-Azman-Hashim">
+                            </div>
+                            <div class="content">
+                                <h5 class="title"><a href="#">Dewan Azman Hashim <img
+                                            src="assets/images/icons/arrow-up-right.svg" alt=""></a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Portfolio End -->
+                    <!-- Single Portfolio Start -->
+                    <div class="col cat-1">
+                        <div class="single-portfolio">
+                            <div class="thumbnail">
+                                <img class="img-fluid" src="StaffPagePicture/Dewan-Seminar.png" alt="Portfolio-01">
+                            </div>
+                            <div class="content">
+                                <h5 class="title"><a href="#">Dewan Seminar<img
+                                            src="assets/images/icons/arrow-up-right.svg" alt=""></a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Portfolio End -->
+                    <!-- Single Portfolio Start -->
+                    <div class="col cat-1">
+                        <div class="single-portfolio">
+                            <div class="thumbnail">
+                                <img class="img-fluid" src="StaffPagePicture/Dewan-Jumaah.png" alt="Portfolio-01">
+                            </div>
+                            <div class="content">
+                                <h5 class="title"><a href="#">Dewan Jumaah <img
+                                            src="assets/images/icons/arrow-up-right.svg" alt=""></a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Portfolio End -->
+                    <!-- Single Portfolio Start -->
+                    <div class="col cat-2">
+                        <div class="single-portfolio">
+                            <div class="thumbnail">
+                                <img class="img-fluid" src="StaffPagePicture/Bilik-Ilmuan-1.png" alt="Portfolio-01">
+                            </div>
+                            <div class="content">
+                                <h5 class="title"><a href="#">Bilik Ilmuan 1 <img
+                                            src="assets/images/icons/arrow-up-right.svg" alt=""></a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Portfolio End -->
+                    <!-- Single Portfolio Start -->
+                    <div class="col cat-2">
+                        <div class="single-portfolio">
+                            <div class="thumbnail">
+                                <img class="img-fluid" src="StaffPagePicture/Bilik-Ilmuan-2.png" alt="Portfolio-01">
+                            </div>
+                            <div class="content">
+                                <h5 class="title"><a href="#">Bilik Ilmuan 2 <img
+                                            src="assets/images/icons/arrow-up-right.svg" alt=""></a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Portfolio End -->
+                    <!-- Single Portfolio Start -->
+                    <div class="col cat-2">
+                        <div class="single-portfolio">
+                            <div class="thumbnail">
+                                <img class="img-fluid" src="StaffPagePicture/Bilik-Ilmuan-3.png" alt="Portfolio-01">
+                            </div>
+                            <div class="content">
+                                <h5 class="title"><a href="#">Bilik Ilmuan 3 <img
+                                            src="assets/images/icons/arrow-up-right.svg" alt=""></a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Portfolio End -->
+                    <!-- Single Portfolio Start -->
+                    <div class="col cat-3">
+                        <div class="single-portfolio">
+                            <div class="thumbnail">
+                                <img class="img-fluid" src="StaffPagePicture/BasketBallCourt.png" alt="Portfolio-01">
+                            </div>
+                            <div class="content">
+                                <h5 class="title"><a href="#">Basketball Court <img
+                                        src="assets/images/icons/arrow-up-right.svg" alt=""></a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Portfolio End -->
+                    <!-- Single Portfolio Start -->
+                    <div class="col cat-3">
+                        <div class="single-portfolio">
+                            <div class="thumbnail">
+                                <img class="img-fluid" src="StaffPagePicture/TennisCourt.png" alt="Portfolio-01">
+                            </div>
+                            <div class="content">
+                                <h5 class="title"><a href="#">Tennis Court <img
+                                        src="assets/images/icons/arrow-up-right.svg" alt=""></a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Portfolio End -->
+                    <!-- Single Portfolio Start -->
+                    <div class="col cat-3">
+                        <div class="single-portfolio">
+                            <div class="thumbnail">
+                                <img class="img-fluid" src="StaffPagePicture/FootballField.png" alt="Portfolio-01">
+                            </div>
+                            <div class="content">
+                                <h5 class="title"><a href="#">Football Field <img
+                                        src="assets/images/icons/arrow-up-right.svg" alt=""></a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Portfolio End -->
+                </div>
+            </div>
+        </div><br><br>
+        <!-- Portfolio Section End -->
+
+        <div class="footer-section section" data-bg-color="#030e22">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <p class="copyright">© 2022 <strong>UTM</strong> Made with <i class="fas fa-heart text-danger" aria-hidden="true"></i></p>
+                    </div>
+                </div>
+                <!-- Footer Copyright End -->
+
+            </div>
+        </div>
+
+        <!-- Scroll Top Start -->
+        <a href="#" class="scroll-top" id="scroll-top">
+            <i class="arrow-top fal fa-long-arrow-up"></i>
+            <i class="arrow-bottom fal fa-long-arrow-up"></i>
+        </a>
+        <!-- Scroll Top End -->
+    </div>
+
+    
+    <!-- JS
+============================================ -->
+
+    <!-- Vendors JS -->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/vendor/jquery-migrate-3.1.0.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugins JS -->
+    <script src="assets/js/plugins/aos.min.js"></script>
+    <script src="assets/js/plugins/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/plugins/isotope.pkgd.min.js"></script>
+    <script src="assets/js/plugins/parallax.min.js"></script>
+    <script src="assets/js/plugins/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/js/plugins/jquery.counterup.min.js"></script>
+    <script src="assets/js/plugins/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/plugins/svg-inject.min.js"></script>
+    <script src="assets/js/plugins/swiper.min.js"></script>
+    <script src="assets/js/plugins/vanilla-tilt.min.js"></script>
+    <script src="assets/js/plugins/vivus.min.js"></script>
+    <script src="assets/js/plugins/waypoints.min.js"></script>
+
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <!-- <script src="assets/js/vendor/vendor.min.js"></script>
+    <script src="assets/js/plugins/plugins.min.js"></script> -->
+
+    <!-- Main Activation JS -->
+    <script src="assets/js/main.js"></script>
+
+
+
+
+
+</body>
+
+</html>
